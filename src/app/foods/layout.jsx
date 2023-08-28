@@ -5,7 +5,7 @@ export default function layout({children}) {
   return (
     <div>
         <Navbar />
-        <div className='relative top-[280px] -z-[1]'>
+        <div className='relative top-[280px]'>
         {children}
 
         </div>

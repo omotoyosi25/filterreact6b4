@@ -113,13 +113,17 @@ const foods = [
       setSearchFood(e.target.value)
     }
   
-    const foodClass =foodfiltered.map(food => (
+    const foodClass =foodfiltered.length > 0 ? foodfiltered.map(food => (
       <section key={Math.random()} className={styles.section}>
           <h2>{food.name}</h2>
           <Image src={`https://robohash.org/${food.name}`} alt={food.name} width={250} height={250}/>
           <Icon />
       </section>
     )) 
+    :
+    (
+      <h2 className='text-center text-4xl uppercase'>Item not found</h2>
+    )
    
 
   return (
