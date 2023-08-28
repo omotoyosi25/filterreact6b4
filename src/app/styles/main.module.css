@@ -1,0 +1,29 @@
+.main{
+    background: linear-gradient(to bottom right, green 33%, white 33%, white 67%, green 67%);
+    min-height: 100vh;
+}
+
+.icon:hover{
+    color: blue;
+}
+
+.soccer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.baller{
+    box-shadow: 10px 10px 30px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 20px 0;
+}
+
+.baller:hover{
+    border-radius: 20px;
+    box-shadow: 5px 5px 40px gray;
+    cursor: pointer;
+}
