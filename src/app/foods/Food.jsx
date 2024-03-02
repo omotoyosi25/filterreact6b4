@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Icon from './Icon'
 import styles from '../styles/food.module.css'
 
@@ -120,7 +120,7 @@ const foods = [
           <Icon />
       </section>
     )) 
-    :
+    : 
     (
       <h2 className='text-center text-4xl uppercase'>Item not found</h2>
     )
@@ -133,7 +133,6 @@ const foods = [
     className='w-[40%] outline-none  py-2 border-b-2 border-solid border-b-blue-600'
     value={searchFood} 
     onChange={temi}/>
-
     </div>
 
     <div className={styles.main}>
